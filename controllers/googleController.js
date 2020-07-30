@@ -1,11 +1,11 @@
-const axios = require("axios");
+const axios = require('axios');
 
+// Defining methods for the booksController
 module.exports = {
-    findAll: function(req, res) {
-        const searchTerm = req.params.searchTerm;
-      axios.get("https//:googleapis.com/books/v1/volumes/?=q" + searchTerm).then(results => {
-        res.json(results.data.items);
-          console.log(results)
-      }).catch(err => res.status(422).json(err));
+    findByTitle: function (req, res) {
+        const title = req.params.title;
+        axios.get('https://www.googleapis.com/books/v1/volumes?q=' + title).then(results => {
+            res.json(results.data.items);
+        }).catch(err => res.json(err));
     }
-    }
+};
