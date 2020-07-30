@@ -5,6 +5,6 @@ const googleRoutes = require('./google');
 
 // Book routes
 router.use('/books', bookRoutes);
-router.use('/google', googleRoutes)
+router.use('/search', searchRoutes)
 
 module.exports = router;
