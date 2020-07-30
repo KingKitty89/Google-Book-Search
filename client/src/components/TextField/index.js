@@ -1,24 +1,31 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Box from '@material-ui/core/Box';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { Box, TextField }from '@material-ui/core';
+
 
 const useStyles = makeStyles(theme => ({
     root: {
         '& > *': {
             margin: theme.spacing(3),
-            width: '35ch'
+            width: '40ch',
+            
         }
+    },
+    form: {
+        backgroundColor: "white"
     }
 }));
 
-export default function BasicTextFields(props) {
+
+
+export default function SearchTextField(props) {
     const classes = useStyles();
+    
 
     return (
         <Box display="flex" alignItems="center" justifyContent="center">
             <form className={classes.root} noValidate autoComplete="off">
-                <TextField id="outlined-basic" label="Search Books" variant="outlined" onChange={props.handleInputChange} value={props.searchTerm}/>
+                <TextField className={classes.form} id="filled-basic" label="Search Books" variant="filled" onChange={props.handleInputChange} value={props.searchTerm}/>
             </form>
         </Box>
     );
