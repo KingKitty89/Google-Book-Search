@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import Textfield from "../components/TextField";
 import API from '../utils/API';
 import { makeStyles } from '@material-ui/core/styles';
@@ -85,14 +84,14 @@ function Search() {
                             image={
                                 book.volumeInfo.imageLinks
                                     ? book.volumeInfo.imageLinks.thumbnail
-                                    : 'https://via.placeholder.com/150.png?text=No+Image+Found'
+                                    : 'https://www.fillmurray.com/640/360'
                             }
                             title={book.volumeInfo.title}
                             authors={book.volumeInfo.authors.join(', ')}
                             description={
                                 book.volumeInfo.description
                                     ? book.volumeInfo.description
-                                    : 'No synopsis found'
+                                    : 'No description for this book'
                             }
                             link={book.volumeInfo.infoLink}
                             action={() => {

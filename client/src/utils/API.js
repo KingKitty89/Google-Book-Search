@@ -3,10 +3,10 @@ import axios from "axios";
 export default {
   // Gets all books
   search: function (query) {
-    return axios.get('/api/google/' + query);
+    return axios.get("/api/google/" + query);
 },
   getBooks: function() {
-    return axios.get("/api/books");
+    return axios.get("/api/books/");
   },
   // Gets the book with the given id
   getBook: function(id) {
@@ -21,3 +21,4 @@ export default {
     return axios.post("/api/books", bookData);
   }
 };
+
