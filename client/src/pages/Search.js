@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Textfield from "../components/TextField";
-import API from '../utils/API';
-import { makeStyles } from '@material-ui/core/styles';
-import MediaCard from '../components/MediaCard';
-import GridList from '@material-ui/core/GridList';
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import API from "../utils/API";
+import { makeStyles } from "@material-ui/core/styles";
+import MediaCard from "../components/MediaCard";
+import { GridList, Button, Container, Box, Typography } from "@material-ui/core"
+
 
 const useStyles = makeStyles(theme => ({
     box: {
@@ -50,16 +47,13 @@ function Search() {
         setSearchTerm(value);
     }
 
-    const saveBook = (bookData) => {
-        API.saveBook({
+    const makeBook = (bookData) => {
+        API.makeBook({
+            _id: bookData.id,
             title: bookData.volumeInfo.title,
-            authors: bookData.volumeInfo.authors ? bookData.volumeInfo.authors : 'No authors found',
-            description: bookData.volumeInfo.description
-                ? bookData.volumeInfo.description
-                : 'No synopsis found',
-            image: bookData.volumeInfo.imageLinks
-                ? bookData.volumeInfo.imageLinks.thumbnail
-                : 'https://via.placeholder.com/150.png?text=No+Image+Found',
+            authors: bookData.volumeInfo.authors,
+            description: bookData.volumeInfo.description,
+            image: bookData.volumeInfo.imageLinks,
             link: bookData.volumeInfo.infoLink
         })
             .then(res => console.log(res))
@@ -81,28 +75,20 @@ function Search() {
                     {books.map((book, i) => (
                         <MediaCard
                             key={i}
-                            image={
-                                book.volumeInfo.imageLinks
-                                    ? book.volumeInfo.imageLinks.thumbnail
-                                    : 'https://www.fillmurray.com/640/360'
-                            }
+                            image={book.volumeInfo.imageLinks}
                             title={book.volumeInfo.title}
                             authors={book.volumeInfo.authors.join(', ')}
-                            description={
-                                book.volumeInfo.description
-                                    ? book.volumeInfo.description
-                                    : 'No description for this book'
-                            }
+                            description={book.volumeInfo.description}
                             link={book.volumeInfo.infoLink}
                             action={() => {
-                                saveBook(book);
+                                makeBook(book);
                             }}
                             btnContent={'Save Book'}
                         />
                     ))}
                 </GridList>
             ) : (
-                <Typography color="primary" variant="h3" className={classes.box}>
+                <Typography variant="h3" className={classes.box}>
                 </Typography>
             )}
         </Container>
