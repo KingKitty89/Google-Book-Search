@@ -1,8 +1,59 @@
-body {
-  background: url(book.jpeg) no-repeat center center fixed;
-  -webkit-background: cover;
-  -moz-background: cover;
-  -o-background: cover;
-  background: cover;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  padding: 38px 0 38px 0;
+  background: blue;
+  color: aliceblue;
+  text-align: center;
+}
+
+header h1 {
+  display: inline;
+  margin-left: 15px;
+  font-weight:300;
+}
+
+#search {
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px;
+}
+#saved {
+  float: right;
+  padding: 8px;
+}
+.search-area {
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.card-container {
+  width: 70rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 30px;
+
+}
+
+#save-button {
+  margin: 20px;
+}
+
+input {
+  width: 150px;
+  padding: 5px;
+  font-size: 1em;
+}
+.nav-item {
+  font-size: 20px;
   
+}
+
+input {
+  margin: 10px;
 }
