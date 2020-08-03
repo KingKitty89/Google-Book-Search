@@ -13,13 +13,11 @@ class App extends Component {
         <div>
           <NavTabs />
           <Header />
-          <Switch> 
-            <Route exact path={["/", "/search"]} component={Search}> 
-              
-             </Route>
-            <Route exact path="/saved" component={Saved}> 
-            </Route>
-          </Switch> 
+          <Switch>
+            <Route exact path="/" component={Search} />
+            <Route exact path="/search" component={Search} />
+            <Route exact path="/saved" component={Saved} />
+          </Switch>
         </div>
       </Router>
     );
