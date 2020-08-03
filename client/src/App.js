@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-import Search from "./Pages/Search";
-import Saved from "./Pages/Saved";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 import "./App.css";
 import NavTabs from "./components/NavTabs";
 
