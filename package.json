@@ -23,6 +23,11 @@
     "axios": "^0.19.2",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.9.26"
+    "mongoose": "^5.9.27",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "superagent": "^5.3.1"
   }
 }
