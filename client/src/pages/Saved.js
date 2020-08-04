@@ -1,7 +1,8 @@
 import React from "react";
 import API from "../utils/API"
-import BookList from "../components/BookList";
+import SavedList from "../components/SavedList";
 
+//could not get this to connect with my get books api route
 class Saved extends React.Component {
     state = {
         saved: [],
@@ -19,7 +20,7 @@ class Saved extends React.Component {
     render() {
         return (
             <div>
-               <BookList books={this.state.books}/>
+               <SavedList books={this.state.books}/>
             </div>
         )
     }
