@@ -25,7 +25,6 @@ This is an app that allows a user to search for books via the Google Books API. 
 
 ![Demo](../assets/gbsearch3.png)
 
-
 ## **Test**
 
 <p align="center">
