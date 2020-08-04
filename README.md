@@ -5,7 +5,7 @@
 
 ## **Live Link**
 
-<h2><a href ="https://drive.google.com/file/d/1t8R_XJxwY88GzuJ9vhhVM0Oebb8ivoIw/view">Live Link</a></h2>
+<h2><a href ="https://still-springs-85995.herokuapp.com/">Live Link</a></h2>
 
 ## **Description**
 This is an app that allows a user to search for books via the Google Books API. The user can view more detailed information about each book that they search by clicking the "View More" button.
@@ -31,6 +31,8 @@ This is an app that allows a user to search for books via the Google Books API. 
 <p align="center">
   <img width="460" height="300" src="./assets/gbsearch.gif">
 </p>
+
+<h2><a href ="https://drive.google.com/file/d/1t8R_XJxwY88GzuJ9vhhVM0Oebb8ivoIw/view">Demo</a></h2>
 
 ## **Usage**
 
