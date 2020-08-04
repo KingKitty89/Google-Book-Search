@@ -1,29 +1,46 @@
-# Create React Express App
+## **Google-Book-Search**
+------
 
-## About This Boilerplate
+<img src="https://img.shields.io/badge/-made%20with%20love-brightgreen" >
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## **Live Link**
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+<h2><a href ="https://drive.google.com/file/d/1t8R_XJxwY88GzuJ9vhhVM0Oebb8ivoIw/view">Live Link</a></h2>
 
-## Starting the app locally
+## **Description**
+This is an app that allows a user to search for books via the Google Books API. The user can view more detailed information about each book that they search by clicking the "View More" button.
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+## **Technology Stack**
+* React
+* JavaScript
+* Node.js
+* GitHub
+* APIs
 
-```
-npm install
-```
+## **Screenshots**
 
-This should install node modules within the server and the client folder.
+![Demo](./assets/gbsearch1.png)
 
-After both installations complete, run the following command in your terminal:
+![Demo](./assets/gbsearch2.png)
 
-```
-npm start
-```
+![Demo](./assets/gbsearch3.png)
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
-## Deployment (Heroku)
+## **Test**
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+<p align="center">
+  <img width="460" height="300" src="./assets/gbsearch.gif">
+</p>
+
+## **Usage**
+
+This application allows a user to search for books and see more info about books they have searched.
+
+
+## **Contributors/Contact**
+
+#### **Jessica Helft** 
+* [@KingKitty89](https://github.com/KingKitty89)
+* [Portfolio](https://kingkitty89.github.io/ResponsivePortfolio/)
+* [jessicahelft@gmail.com](jessicahelft@gmail.com)
+* [LinkedIn](https://www.linkedin.com/in/jessicahelft)
